@@ -21,12 +21,8 @@ public class TestCliente {
         logger.info("=== INICIO CICLO DE VIDA: CLIENTE ===");
 
         // 1. TRANSIENT
-        Cliente cliente = new Cliente();
-        cliente.setNombre("Juan");
-        cliente.setApellidos("Pérez Gómez");
-        cliente.setDni("12345678A");
-        cliente.setTelefono("600123456");
-        cliente.setEmail("juan.perez@email.com");
+        Cliente cliente = new Cliente("Juan","Pérez Gómez","98563274S","600123456","juan.perez@email.com");
+
         logger.info("1. TRANSIENT - ¿Está gestionado?: {}", entityManager.contains(cliente));
 
         // 2. MANAGED (Persist)

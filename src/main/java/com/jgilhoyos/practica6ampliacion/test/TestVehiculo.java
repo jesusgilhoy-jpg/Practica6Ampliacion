@@ -22,7 +22,7 @@ public class TestVehiculo {
 
         // 1. TRANSIENT
         Vehiculo vehiculo = new Vehiculo();
-        vehiculo.setMatricula("1234ABC");
+        vehiculo.setMatricula("1234AZC");
         vehiculo.setMarca("Seat");
         vehiculo.setModelo("León");
         vehiculo.setAnioFabricacion(2020);

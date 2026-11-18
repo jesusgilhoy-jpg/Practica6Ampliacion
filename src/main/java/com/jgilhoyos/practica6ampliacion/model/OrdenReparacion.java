@@ -27,12 +27,13 @@ public class OrdenReparacion {
     private LocalDate fechaEntrada;
 
     @Column
+    @Enumerated(EnumType.STRING)
     private Estado estado;
 
     @Column(name="coste_estimado", precision = 7, scale = 2)
     private BigDecimal costeEstimado;
 
-    @Column
+    @Transient
     private Vehiculo vehiculo;
 
 

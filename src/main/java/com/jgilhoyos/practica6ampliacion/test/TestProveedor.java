@@ -23,7 +23,7 @@ public class TestProveedor {
         // 1. TRANSIENT
         Proveedor proveedor = new Proveedor();
         proveedor.setNombre("Recambios Valencia S.L.");
-        proveedor.setCif("B12345678");
+        proveedor.setCif("Z12345678");
         proveedor.setTelefono(961234567);
         proveedor.setEmail("contacto@recambiosvalencia.com");
         proveedor.setActivo(true);

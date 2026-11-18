@@ -6,11 +6,11 @@ insert into cliente (nombre, apellidos, dni, telefono, email) values ('Carlos', 
 insert into cliente (nombre, apellidos, dni, telefono, email) values ('Elena', 'Prats Vidal', '55555555E', '655555555', 'elena.prats@example.com');
 
 -- Vehículos
-insert into vehiculo (matricula, marca, modelo, anio_fabricacion, kilometraje, cliente) values ('1234ABC', 'Seat', 'Ibiza', 2018, 85000,'Maria');
-insert into vehiculo (matricula, marca, modelo, anio_fabricacion, kilometraje, cliente) values ('5678BCD', 'Renault', 'Clio', 2020, 42000,'Javier');
-insert into vehiculo (matricula, marca, modelo, anio_fabricacion, kilometraje, cliente) values ('9012CDE', 'Ford', 'Fiesta', 2016, 120000,'Lucia');
-insert into vehiculo (matricula, marca, modelo, anio_fabricacion, kilometraje, cliente) values ('3456DEF', 'Toyota', 'Corolla', 2022, 15000, 'Carlos');
-insert into vehiculo (matricula, marca, modelo, anio_fabricacion, kilometraje, cliente) values ('7890EFG', 'Peugeot', '208', 2019, 60000, 'Elena');
+insert into vehiculo (matricula, marca, modelo, anio_fabricacion, kilometraje) values ('1234ABC', 'Seat', 'Ibiza', 2018, 85000);
+insert into vehiculo (matricula, marca, modelo, anio_fabricacion, kilometraje) values ('5678BCD', 'Renault', 'Clio', 2020, 42000);
+insert into vehiculo (matricula, marca, modelo, anio_fabricacion, kilometraje) values ('9012CDE', 'Ford', 'Fiesta', 2016, 120000);
+insert into vehiculo (matricula, marca, modelo, anio_fabricacion, kilometraje) values ('3456DEF', 'Toyota', 'Corolla', 2022, 15000);
+insert into vehiculo (matricula, marca, modelo, anio_fabricacion, kilometraje) values ('7890EFG', 'Peugeot', '208', 2019, 60000);
 
 -- Mecánicos
 insert into mecanico (nombre, apellidos, especialidad, fecha_contratacion, anios_experiencia) values ('Pedro', 'Martín Castro', 'MOTOR', '2015-03-01', 12);
@@ -35,8 +35,8 @@ insert into proveedor (nombre, cif, telefono, email, activo) values ('Talleres S
 
 
 -- Órdenes de reparación
-insert into orden_reparacion (descripcion, fecha_entrada, estado, coste_estimado, id_vehiculo) values ('Cambio de aceite y filtros', '2026-01-10', 'FINALIZADA', 65.00, 1);
-insert into orden_reparacion (descripcion, fecha_entrada, estado, coste_estimado, id_vehiculo) values ('Revisión frenos delanteros', '2026-01-15', 'EN_PROCESO', 120.50, 2);
-insert into orden_reparacion (descripcion, fecha_entrada, estado, coste_estimado, id_vehiculo) values ('Sustitución batería', '2026-01-20', 'PENDIENTE', 95.00, 3);
-insert into orden_reparacion (descripcion, fecha_entrada, estado, coste_estimado, id_vehiculo) values ('Cambio de neumáticos', '2026-02-01', 'FINALIZADA', 260.00, 4);
-insert into orden_reparacion (descripcion, fecha_entrada, estado, coste_estimado, id_vehiculo) values ('Diagnóstico avería eléctrica', '2026-02-05', 'EN_PROCESO', 150.75, 5);
+insert into orden_reparacion (descripcion, fecha_entrada, estado, coste_estimado) values ('Cambio de aceite y filtros', '2026-01-10', 'FINALIZADA', 65.00);
+insert into orden_reparacion (descripcion, fecha_entrada, estado, coste_estimado) values ('Revisión frenos delanteros', '2026-01-15', 'EN_PROCESO', 120.50);
+insert into orden_reparacion (descripcion, fecha_entrada, estado, coste_estimado) values ('Sustitución batería', '2026-01-20', 'PENDIENTE', 95.00);
+insert into orden_reparacion (descripcion, fecha_entrada, estado, coste_estimado) values ('Cambio de neumáticos', '2026-02-01', 'FINALIZADA', 260.00);
+insert into orden_reparacion (descripcion, fecha_entrada, estado, coste_estimado) values ('Diagnóstico avería eléctrica', '2026-02-05', 'EN_PROCESO', 150.75);

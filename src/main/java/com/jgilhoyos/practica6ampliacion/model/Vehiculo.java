@@ -13,7 +13,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Vehiculo {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_vehiculo;
@@ -35,4 +34,13 @@ public class Vehiculo {
 
     @Transient
     private Cliente cliente;
+
+
+    public Vehiculo(String matricula, String marca, String modelo, int anioFabricacion, int kilometraje) {
+        this.matricula = matricula;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.anioFabricacion = anioFabricacion;
+        this.kilometraje = kilometraje;
+    }
 }

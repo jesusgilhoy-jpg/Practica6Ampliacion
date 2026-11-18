@@ -33,7 +33,11 @@ public class Cliente {
     @Column(unique = true)
     private String email;
 
-
-
-
+    public Cliente(String nombre, String apellidos, String dni, String telefono, String email) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.dni = dni;
+        this.telefono = telefono;
+        this.email = email;
+    }
 }
